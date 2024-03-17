@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="/css/style.css">
+  
+</head>
+
+<body>
+    <section id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>WeBlog</h1>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/blog_list.html">Blog list</a></li>
+                    <li><a href="/blog_detail.html">Blog detail</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <img src="/image/menu-line.png">
+                </div>
+            </nav>
+
+            <div class="header-content">
+                <h1>IT'S ME ABHI</h1>
+                <P>I'm passionate about traveling and exploring new things and places, and I love sharing my adventures and discoveries with others. Join me as I explore the world and seek out new experiences.
+                </P>
+                <button class="primary-btn">EXPROLE</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="container">
+        <div class="service">
+            <img src="/image/service-1.png" alt=""/>
+            <h1>Web Desing</h1>
+            <p>custom web design for small businesses, we help you to capture the nex audiences and increase your sales.</p>
+        </div>
+        <div class="service">
+            <img src="/image/service-2.png" alt=""/>
+            <h1>Graphic Desing</h1>
+            <p>custom web design for small businesses, we help you to capture the nex audiences and increase your sales.</p>
+        </div>
+        <div class="service">
+            <img src="/image/service-3.png" alt=""/>
+            <h1>content creations</h1>
+            <p>custom web design for small businesses, we help you to capture the nex audiences and increase your sales.</p>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <div class="about-content">
+            <h1>About Me</h1>
+            <p>
+                write about you This code snippet is a JavaScript function that is used for form validation. It checks if a gender option is selected in a form with the name frm1. If neither the first nor the second gender option is checked (i.e., if both checkboxes are unchecked), it displays an alert message saying "please select a gender" and returns false, indicating that the form should not be submitted. If either of the gender options
+            </p>
+        </div>
+        <div class="about-img">
+            <img src="/image/about.png" alt=""/>
+        </div>
+    </section>
+
+    <section id="talk-to-us">
+        <div class="talk-to-us-content">
+            <h1>TALK TO ME</h1>
+            <p>Have any question? We are always open to talk</p>
+            <button class="primary-btn">GET IN TOUCH</button>
+        </div>
+    </section>
+
+    <footer class="container">
+        <ul class="footerlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="/blog_list.html">Blog List</a></li>
+            <li><a href="/blog_detail.html">Blog Details</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <h1 class="logo">WeBlog</h1>
+        <p>&copy;2024 WeBlog. All right reserved.</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const navLinks = document.querySelector(".nav-list");
+        menuBtn.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>

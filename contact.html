@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section id="contact-header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>WeBlog</h1>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="/Home.html">Home</a></li>
+                    <li><a href="/blog_list.html">Blog list</a></li>
+                    <li><a href="/blog_detail.html">Blog detail</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <img src="/image/menu-line.png">
+                </div>
+            </nav>
+            <div class="header-content">
+                <h1>CONTACT ME</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us" class="container">
+        <form action="#">
+            <h1>Get In Touch</h1>
+            <div class="inputswrapper">
+                <input type="text" placeholder="Your Name" />
+                <input type="text" placeholder="Phone Number" />
+                <input type="email" name="" id="" placeholder="Email" />
+                <textarea name="message" id="" cols="30" rows="10 "></textarea>
+                <button class="primary-btn">SEND NOW</button>
+            </div>
+        </form>
+        <div class="addresss">
+            <h1>Talks to me</h1>
+            <div class="detailsWrapper">
+                <div class="detail">
+                    <img src="/image/email.png" alt="">
+                    <div class="text">
+                        <h6>EMAIL</h6>
+                        <P>duwal12334@gmail.com</P>
+                    </div>
+                </div>
+                <div class="detail">
+                    <img src="/image/phone.png" alt="">
+                    <div class="text">
+                        <h6>PHONE NUMBER</h6>
+                        <P>+977 9872739312</P>
+                    </div>
+                </div>
+                <div class="detail">
+                    <img src="/image/location.png" alt="">
+                    <div class="text">
+                        <h6>ADDRESS</h6>
+                        <P>Tinkune-07-KT M</P>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="followUsWrapper">
+                <h3>Follow Me</h3>
+                <ul class="socialLink">
+                    <li><a href=""><img src="/image/facebook.png"></a></li>
+                    <li><a href=""><img src="/image/linkedin.png"></a></li>
+                    <li><a href=""><img src="/image/video.png"></a></li>
+    
+                </ul>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="container">
+        <ul class="footerlinks">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/blog_list.html">Blog List</a></li>
+            <li><a href="/blog_detail.html">Blog Details</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <h1 class="logo">WeBlog</h1>
+        <p>&copy;2022 WeBlog. All right reserved.</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const navLinks = document.querySelector(".nav-links");
+        menuBtn.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>

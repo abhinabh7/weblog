@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section id="contact-header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>WeBlog</h1>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/blog_list.html">Blog list</a></li>
+                    <li><a href="/blog_detail.html">Blog detail</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="menu-btn">
+                    <img src="/image/menu-line.png">
+                </div>
+            </nav>
+            <div class="header-content">
+                <h1>CONTACT ME</h1>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="container">
+        <ul class="footerlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog List</a></li>
+            <li><a href="#">Blog Details</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <h1 class="logo">WeBlog</h1>
+        <p>&copy;2022 WeBlog. All right reserved.</p>
+    </footer>
+
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const navLinks = document.querySelector(".nav-links");
+        menuBtn.addEventListener("click", function () {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>
