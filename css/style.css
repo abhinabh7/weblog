@@ -145,6 +145,10 @@ nav .logo {
     color: var(--primary-dark);
     text-transform: uppercase;
 }
+.about-content p{
+    color: gray;
+    
+}
 
 #about img {
     max-width: 100%;
@@ -174,6 +178,7 @@ nav .logo {
 
 .talk-to-us-content p {
     max-width: 500px;
+    color: gray;
 
 }
 
@@ -294,7 +299,7 @@ form {
         background-color: var(--white);
         width: 80%;
         height: 100;
-        align-items: end ; 
+        align-items: end ;
         padding-top: 80px;
         margin-right: -900px;
         transition: all 0.3s ease;
