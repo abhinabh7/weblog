@@ -4,11 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gallery</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
@@ -19,42 +16,82 @@
                     <h1>WeBlog</h1>
                 </div>
                 <ul class="nav-list">
-                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Home.html">Home</a></li>
                     <li><a href="/blog_list.html">Blog list</a></li>
                     <li><a href="/blog_detail.html">Blog detail</a></li>
-                    <li><a href="/gallery.html">Gallery</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
                 </ul>
                 <div class="menu-btn">
                     <img src="/image/menu-line.png">
                 </div>
             </nav>
             <div class="header-content">
-                <h1>CONTACT ME</h1>
+                <h1>My Gallery</h1>
             </div>
         </div>
     </section>
 
-    
-    <footer class="container">
-        <ul class="footerlinks">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Blog List</a></li>
-            <li><a href="#">Blog Details</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <h1 class="logo">WeBlog</h1>
-        <p>&copy;2022 WeBlog. All right reserved.</p>
-    </footer>
 
-    <script>
-        const menuBtn = document.querySelector(".menu-btn");
-        const navLinks = document.querySelector(".nav-links");
-        menuBtn.addEventListener("click", function () {
-            navLinks.classList.toggle("active");
-        });
-    </script>
+    <div class="gallery-container">
+        <div class="G-heading">
+            <h3>Photo Gallery</h3>
+        </div>
+        <div class="box">
+
+            <div class="dream">
+                <img src="/image/image-t0.jpg" alt="Photo 1">
+                <img src="/image/image_t.jpg" alt="Photo 2">
+                <img src="/image/image_t2.jpg" alt="Photo 3">
+            </div>
+            <div class="dream">
+                <img src="/image/m1.jpg" alt="Photo 1">
+                <img src="/image/m2.jpg" alt="Photo 2">
+                <img src="/image/m3.jpg" alt="Photo 3">
+            </div>
+            <div class="dream">
+                <img src="/image/f3.jpg" alt="Photo 1">
+                <img src="/image/f2.jpg" alt="Photo 2">
+                <img src="/image/f1.jpg" alt="Photo 3">
+                <img src="/image/f5.jpg" alt="Photo 3">
+            </div>
+        </div>
+        <button class="primary-btn">More</button>
+        <div class="v-heading">
+            <h3>Videos</h3>
+        </div>
+        <div class="next-box">
+
+            <div class="Vdream">
+                <video controls autoplay muted src="video/REMEMBER ｜ Cinematic Vlog Shot on Sony FX30.mp4"></video>
+            </div>
+            <div class="Vdream">
+                <video controls autoplay muted src="video/REMEMBER ｜ Cinematic Vlog Shot on Sony FX30.mp4"></video>
+                </div>
+                <div class="Vdream">
+                    <video controls autoplay muted src="video/REMEMBER ｜ Cinematic Vlog Shot on Sony FX30.mp4"></video>
+                </div>
+            </div>
+        </div>
+        <footer class="container">
+            <ul class="footerlinks">
+                <li><a href="/Home.html">Home</a></li>
+                <li><a href="/blog_list.html">Blog List</a></li>
+                <li><a href="/blog_detail.html">Blog Details</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+            <h1 class="logo">WeBlog</h1>
+            <p>&copy;2022 WeBlog. All right reserved.</p>
+        </footer>
+
+        <script>
+            const menuBtn = document.querySelector(".menu-btn");
+            const navLinks = document.querySelector(".nav-links");
+            menuBtn.addEventListener("click", function () {
+                navLinks.classList.toggle("active");
+            });
+        </script>
 </body>
 
 </html>

@@ -4,8 +4,9 @@
     --black: #0000;
     --white: #efefef;
 
-   
+
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -47,12 +48,38 @@ nav ul {
     display: flex;
     list-style: none;
     gap: 32px;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 nav .logo {
-    font-size: 20px;
+    font-size: 25px;
 }
+
+nav ul li a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-light);
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-light);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
 
 .header-content {
     display: flex;
@@ -65,17 +92,18 @@ nav .logo {
 }
 
 .header-content h1 {
-    font-size: 60px;
+    font-size: 65px;
     color: var(--primary-dark);
     font-weight: 500;
 }
 
 .header-content p {
-    font-size: 16px;
+    font-size: 20px;
     color: var(--primary-dark);
     width: 44%;
     text-align: justify;
     margin: 0 auto;
+    text-align: center;
 }
 
 .primary-btn {
@@ -105,7 +133,7 @@ nav .logo {
     display: none;
 }
 
-#services {
+/* #services {
     display: flex;
     margin-top: 120px;
     gap: 30px;
@@ -123,11 +151,36 @@ nav .logo {
 
 .service img {
     max-width: 100%;
+} */
+#services {
+    display: flex;
+    margin-top: 50px;
+    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service {
+    flex: 1; /* Allow the service items to grow to take up remaining space */
+    max-width: 300px; /* Limit the width if needed */
+    text-align: center; /* Center the content horizontally */
+    margin-bottom: 20px; /* Add some space between the service items */
+}
+
+.service p {
+    color: gray;
+    text-align:justify;
+}
+
+.service img {
+    width: 100%; /* Make the image take up the full width of its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+    max-width: 100%; /* Ensure the image does not exceed its original size */
 }
 
 #about {
     display: flex;
-    margin-top: 120px;
+    margin-top: 100px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -145,9 +198,11 @@ nav .logo {
     color: var(--primary-dark);
     text-transform: uppercase;
 }
-.about-content p{
+
+.about-content p {
     color: gray;
-    
+    margin-top: 15px;
+    text-align: justify;
 }
 
 #about img {
@@ -198,6 +253,16 @@ footer ul {
 footer .logo {
     color: var(--primary-dark);
 }
+.footerlinks a {
+    text-decoration: none;
+    color:black;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.footerlinks a:hover {
+    color: var(--primary-dark); /* Change color on hover */
+}
+
 
 /* Contact page*/
 #contact-header {
@@ -269,6 +334,75 @@ form {
     list-style: none;
     margin-top: 16px;
 }
+/* Gallery page */
+.gallery-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+.gallery-container .G-heading{
+    width: 50%;
+    padding-bottom: 60px;
+
+}
+.gallery-container .G-heading h3{
+    font-size: 3em;
+    color:rgb(123, 191, 247); 
+    font-weight: bolder;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--primary-light);
+}
+.gallery-container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.gallery-container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+.gallery-container .box .dream img{
+   
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+.gallery-container .v-heading{
+    width: 100%;
+    padding-bottom: 30px;
+
+}
+.gallery-container .v-heading h3{
+    font-size: 3em;
+    color:rgb(123, 191, 247); 
+    font-weight: bolder;
+    padding-top: 25px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--primary-light);
+}
+.gallery-container .next-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.gallery-container .next-box .Vdream{
+    display: flex;
+    flex-direction: column;
+    width: calc(33.33% -10px);/* Adjusted width to fit three containers in a row */
+    margin: 10px;
+}
+.gallery-container .next-box .Vdream video{
+   
+    width: 100%;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
 
 @media only screen and (max-width: 520px) {
     #header {
@@ -299,7 +433,7 @@ form {
         background-color: var(--white);
         width: 80%;
         height: 100;
-        align-items: end ;
+        align-items: end;
         padding-top: 80px;
         margin-right: -900px;
         transition: all 0.3s ease;
@@ -325,7 +459,17 @@ form {
     #contact-us {
         flex-direction: column;
     }
-    .inputswrapper{
+
+    .inputswrapper {
         margin-left: 0;
+    }
+    .gallery-container .box{
+        flex-direction: column;
+        
+    
+    }
+    .gallery-container .box .dream{
+       
+        width: 100%;
     }
 }
