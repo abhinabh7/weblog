@@ -32,57 +32,88 @@
             </div>
         </div>
     </section>
-
     <section id="contact-us" class="container">
-        <form action="#">
+        <form id="contactForm">
             <h1>Get In Touch</h1>
             <div class="inputswrapper">
-                <input type="text" placeholder="Your Name" />
-                <input type="text" placeholder="Phone Number" />
-                <input type="email" name="" id="" placeholder="Email" />
-                <textarea name="message" id="" cols="30" rows="10 "></textarea>
-                <button class="primary-btn">SEND NOW</button>
+                <input type="text" id="name" placeholder="Your Name" required />
+                <input type="tel" id="phone" placeholder="Phone Number" required />
+                <input type="email" id="email" placeholder="Email" required />
+                <textarea id="message" name="message" cols="30" rows="10" required></textarea>
+                <button type="submit" class="primary-btn">SEND NOW</button>
             </div>
         </form>
         <div class="addresss">
-            <h1>Talks to me</h1>
+            <h1>Talk to Me</h1>
             <div class="detailsWrapper">
                 <div class="detail">
                     <img src="/image/email.png" alt="">
                     <div class="text">
                         <h6>EMAIL</h6>
-                        <P>duwal12334@gmail.com</P>
+                        <p>duwal12334@gmail.com</p>
                     </div>
                 </div>
                 <div class="detail">
                     <img src="/image/phone.png" alt="">
                     <div class="text">
                         <h6>PHONE NUMBER</h6>
-                        <P>+977 9872739312</P>
+                        <p>+977 9872739312</p>
                     </div>
                 </div>
                 <div class="detail">
                     <img src="/image/location.png" alt="">
                     <div class="text">
                         <h6>ADDRESS</h6>
-                        <P>Tinkune-07-KT M</P>
+                        <p>Tinkune-07-KT M</p>
                     </div>
                 </div>
             </div>
-            
             <div class="followUsWrapper">
                 <h3>Follow Me</h3>
                 <ul class="socialLink">
                     <li><a href=""><img src="/image/facebook.png"></a></li>
                     <li><a href=""><img src="/image/linkedin.png"></a></li>
                     <li><a href=""><img src="/image/video.png"></a></li>
-    
                 </ul>
-
             </div>
         </div>
-
     </section>
+
+
+    <!-- for the validation of client side validation -->
+    <!-- <script>
+        const contactForm = document.getElementById("contactForm");
+    
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+    
+            const name = document.getElementById("name").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+    
+            if (name === "" || phone === "" || email === "" || message === "") {
+                alert("Please fill in all fields.");
+                return;
+            }
+    
+            if (!validateEmail(email)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+    
+            // If all validations pass, you can proceed with form submission
+            alert("Form submitted successfully!");
+            contactForm.reset();
+        });
+    
+        function validateEmail(email) {
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return regex.test(email);
+        }
+    </script> -->
+
+
 
     <footer class="container">
         <ul class="footerlinks">

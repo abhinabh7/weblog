@@ -358,12 +358,12 @@ form {
 
 .gallery-container .G-heading {
     width: 50%;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 
 }
 
 .gallery-container .G-heading h3 {
-    font-size: 3em;
+    font-size: 2em;
     color: rgb(123, 191, 247);
     font-weight: bolder;
     padding-bottom: 12px;
@@ -397,7 +397,7 @@ form {
 }
 
 .gallery-container .v-heading h3 {
-    font-size: 3em;
+    font-size: 2em;
     color: rgb(123, 191, 247);
     font-weight: bolder;
     padding-top: 25px;
@@ -446,7 +446,7 @@ form {
     font-size: 25px;
     color: rgb(123, 191, 247);
     font-weight: bolder;
-    padding-top: 30px;
+    padding-top: 0px;
 }
 
 .blog-detail-container .bd-heading h6 {
@@ -483,11 +483,14 @@ form {
 }
 
 /* Blog List page */
-
+.blog-detail-container .detail-box .p-Dbox{
+    padding-bottom: 30px;
+}
 .blog-detail-container .detail-box ol {
     color:  rgb(48, 47, 47);
     padding-top: 10px;
-    padding-left: 50px; 
+    padding-left: 30px; 
+   
 }
 table {
     border-collapse: collapse;
